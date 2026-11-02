@@ -1,0 +1,4 @@
+validation_window,rows,MAE,RMSE
+Window 1,139,1.17704,1.46129
+Window 2,139,1.38614,1.70696
+Window 3,138,1.28303,1.6042

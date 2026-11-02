@@ -1,0 +1,15 @@
+day,method,partition,MAE,RMSE,rows,interpretation
+Day 16,Persistence,Test,1.9949,2.6342,416,Baseline; weakest of the three Day 16 baselines
+Day 16,Linear Regression,Test,1.4852,1.899,416,Best Day 16 test RMSE
+Day 16,Random Forest,Test,1.5097,1.9079,416,Close to linear regression
+Day 17,Random Forest baseline,Validation,1.2917,1.6116,415,Baseline for Day 17 comparison
+Day 17,Gradient Boosting candidate,Validation,1.2858,1.6011,415,Lower validation RMSE than RF
+Day 17,Random Forest baseline,Test,1.4973,1.91,417,Test comparison
+Day 17,Gradient Boosting candidate,Test,1.5007,1.92,417,Slightly worse test RMSE than RF
+Day 19,"Random Forest tuned (150 trees, depth 12, leaf 4)",Validation,1.2927,1.6091,411,Selected by lowest validation RMSE; test held out
+Day 19,Day 17 RF reference in tuning log,Validation,1.3043,1.6236,411,Same Day 19 tuning validation split
+Day 20,"Random Forest, pH only",Validation,1.2821,1.594,416,Best Day 20 ablation variant
+Day 20,"Random Forest, all 9 sensor features",Validation,1.2944,1.617,416,Full-feature comparator
+Day 20,"Random Forest, without pH",Validation,1.2938,1.6205,416,Ablation variant
+Day 20,"Random Forest, core physical features",Validation,1.3009,1.6315,416,"Hardness, Solids, Conductivity"
+Day 20,"Random Forest, without turbidity",Validation,1.3054,1.635,416,Ablation variant
